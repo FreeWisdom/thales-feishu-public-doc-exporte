@@ -1,0 +1,16 @@
+[project]
+name = "feishu-doc-exporter"
+version = "0.1.0"
+description = "Export Feishu/Lark docx documents into local text, Markdown, JSON, and optional Office files."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+feishu-doc-export = "feishu_doc_exporter.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["feishu_doc_exporter*"]
